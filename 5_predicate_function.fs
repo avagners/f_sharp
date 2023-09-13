@@ -1,5 +1,5 @@
 // 16.1
-let notDivisible(n, m) = n % m = 0 // int * int -> bool
+let notDivisible(n, m) = m % n = 0 // int * int -> bool
 
 // 16.2
 let prime n = // int -> bool
