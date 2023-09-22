@@ -54,7 +54,7 @@ let rec smallest = function // int list -> int option
  | [x: int] -> Some x
  | first :: second :: tail -> if first <= second 
                               then smallest (first :: tail)
-                              else smallest(second :: tail)
+                              else smallest (second :: tail)
 
 // 40.3.2
 let rec delete (n: int, xs: int list) = // int * int list -> int list
