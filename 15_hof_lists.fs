@@ -1,7 +1,7 @@
 // 41.4.1
 let list_filter f (xs: 'a list) : 'a list = // ('a -> bool) -> 'a list -> 'a list
-    let _filter (item: 'a) (acc: 'a list)  = if f item then item :: acc 
-                                             else acc
+    let _filter (item: 'a) (acc: 'a list) : 'a list = if f item then item :: acc 
+                                                      else acc
     List.foldBack _filter xs []
 
 // 41.4.2
