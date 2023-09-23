@@ -50,11 +50,11 @@ let rec minus (xs1: int list, xs2: int list) : int list = // int list * int list
 
 // 40.3.1
 let rec smallest = function // int list -> int option
- | [] -> None
- | [x: int] -> Some x
- | first :: second :: tail -> if first <= second 
-                              then smallest (first :: tail)
-                              else smallest (second :: tail)
+    | [] -> None
+    | [x: int] -> Some x
+    | first :: second :: tail -> if first <= second 
+                                then smallest (first :: tail)
+                                else smallest (second :: tail)
 
 // 40.3.2
 let rec delete (n: int, xs: int list) = // int * int list -> int list
