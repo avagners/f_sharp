@@ -10,9 +10,9 @@ let f (n: int) : int =
 
 
 // 47.4.2
-let mutable previous = 0
-let mutable current = 1
-let mutable counter = 1
+let mutable previous: int = 0
+let mutable current: int = 1
+let mutable counter: int = 1
 
 let fibo (n: int) : int = // int -> int
     if n = 0 then 0 else
