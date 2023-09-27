@@ -1,5 +1,5 @@
 // 49.5.1
-let sqr: int seq = // seq<int>
+let even_seq: int seq = // seq<int>
     Seq.initInfinite ( function n -> (n + 1) * 2 )
 
 // 49.5.2
