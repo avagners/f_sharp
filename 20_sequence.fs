@@ -14,6 +14,6 @@ let seq_seq: int seq = // seq<int>
     
     let _f = function
         | n when n % 2 = 0 -> n / 2 
-        | n -> -1 *(n + 1) / 2
+        | n -> -(n + 1) / 2
     
     Seq.initInfinite (_f)
